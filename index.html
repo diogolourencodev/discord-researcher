@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Researcher</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #23272a;
+            color: #fff;
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 500px;
+            margin: 60px auto;
+            background: #2c2f33;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px #0008;
+            padding: 32px 24px 24px 24px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 24px;
+            color: #7289da;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"] {
+            width: 96%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #7289da;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #5b6eae;
+        }
+        .result {
+            margin-top: 32px;
+            background: #23272a;
+            border-radius: 8px;
+            padding: 20px;
+            min-height: 80px;
+            font-size: 1rem;
+            word-break: break-word;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px 8px;
+                padding: 18px 6px 12px 6px;
+            }
+        }
+        a:link,
+        a:visited {
+            color: cyan;
+            text-decoration: none;
+        }
+        strong{
+            color: #8fa3e5;
+            margin-block: 10px;
+        }
+        .menubar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: baseline;
+            gap: 8px;
+        }
+        .menubar button.active{
+            color: #23272a;
+        }
+    </style>
+</head>
+<body id="main-body">
+    <header class="menubar">
+        <button type="button" id="userid-researcher">UserID Researcher</button>
+        <button type="button" id="webhook-researcher">Webhook Functions</button>
+        <button type="button" id="guild-researcher">Guild Functions</button>
+    </header>
+    <div class="container" id="main-container">
+        <h1 id="main-title">Discord UserID Researcher</h1>
+        <div id="dynamic-content">
+            <!-- Dynamic content -->
+        </div>
+    </div>
+    <div class="footer">
+        Open-source project for researching Discord users.<br>
+        <span style="color:#7289da">Web version under development.</span><br>
+        Credits: <a href="https://github.com/diogolourencodev" target="_blank">github.com/diogolourencodev</a>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
