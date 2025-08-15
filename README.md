@@ -78,23 +78,10 @@ Advanced guild/invite analysis tools:
 2. Open `index.html` in any modern web browser
 3. Start using immediately!
 
-### Method 2: Local Development Server
+### Method 2: Open on Your Browser
 ```bash
-# Clone the repository
-git clone https://github.com/diogolourencodev/discord-userid-researcher.git
-cd discord-userid-researcher
-
-# Serve with Python
-python -m http.server 8000
-
-# Or serve with Node.js
-npx serve .
+https://discord-researcher.vercel.app/
 ```
-
-### Method 3: Direct Download
-1. Download the ZIP file
-2. Extract to any directory
-3. Open `index.html`
 
 ## 🎯 Usage Guide
 
@@ -181,3 +168,4 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **Note:** This tool is intended for legitimate use with Discord accounts and webhooks you own or have explicit permission to research/manage. Always respect user privacy and Discord's Terms of Service.
+
